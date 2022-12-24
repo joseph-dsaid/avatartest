@@ -37,6 +37,7 @@ const IMAGES_ASSETS = {
 	//hair
 	hair_001_short : "img/hair_001_short.png",
 	hair_002_crewcut : "img/hair_002_crewcut.png",
+	hair_003_f4_grey : "img/hair_003_f4_grey.png",
 	hair_003_f4 : "img/hair_003_f4.png",
 	hair_004_side : "img/hair_004_side.png",
 	hair_005_tall : "img/hair_005_tall.png",
@@ -105,6 +106,8 @@ const IMAGES_ASSETS = {
 	body_005_jacket_blue : "img/body_005_jacket_blue.png",
 	body_005_jacket_green : "img/body_005_jacket_green.png",
 	body_005_jacket_red : "img/body_005_jacket_red.png",
+	
+	body_006_santa : "img/body_006_santa.png",
 	//----------
 	
 	//leg
@@ -120,6 +123,7 @@ const IMAGES_ASSETS = {
 	leg_003_trackpants_blue : "img/leg_003_trackpants_blue.png",
 	leg_003_trackpants_green : "img/leg_003_trackpants_green.png",
 	leg_003_trackpants_red : "img/leg_003_trackpants_red.png",
+	leg_004_santa : "img/leg_004_santa.png",
 
 	//----------
 
