@@ -168,24 +168,6 @@ function redraw_avatar()
         ctx.drawImage(image_assets[avatar['addon']], 0,0);
 }
 
-// function candown(target, type) {
-// 	// (B1) GET CANVAS
-// 	let canvas = document.getElementById(target);
-
-// 	// (B2) CREATE LINK
-// 	let anchor = document.createElement("a");
-// 	anchor.download = "download." + type;
-// 	anchor.href = canvas.toDataURL("image/" + type);
-
-// 	// (B3) "FORCE DOWNLOAD"
-// 	anchor.click();
-// 	anchor.remove();
-
-// 	// (B4) SAFER ALTERNATIVE - LET USER CLICK ON LINK
-// 	// anchor.innerHTML = "Download";
-// 	// document.body.appendChild(anchor);
-//   }
-
 function clear_screen()
 {
 	ctx.fillStyle = DEFAULT_SCREEN_CLEAR;
