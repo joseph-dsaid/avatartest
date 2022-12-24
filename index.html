@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Pixel Avatar Creator</title>
+</head>
+<style>
+    body {font-family: Arial;}
+    
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+</style>
+<body>
+    <div id="main">	
+        <div id="gameDiv" align="center">
+            <canvas id="canvas" style="border: 1px solid black;">
+                Please upgrade your browser to support HTML5. One recommendation is to install Chrome :
+                <br />
+                <a href="https://www.google.com/chrome/">https://www.google.com/chrome/</a>
+            </canvas>
+        </div>
+        <br/>
+        <div id="controls" align="center" >
+            <input type="button" value="Save Avatar" onclick="download_avatar()">
+            <!-- <input type="button" value="Save Avatar2" onclick="candown('canvas', 'png')"> -->
+        </div>
+        <br/>
+        <div id = "div_gender" align="center">
+            <select id="gender" onchange="gender_select()">
+                <option value="base_m_001">Male 1</option>
+                <option value="base_m_002">Male 2</option>
+                <option value="base_m_003">Male 3</option>
+                <option value="base_f_001">Female 1</option>
+                <option value="base_f_002">Female 2</option>
+                <option value="base_f_003">Female 3</option>
+            </select>
+        </div>
+        <br/>
+        <div class="tab">
+            <button class="tablinks" onclick="opentab(event, 'Head')">Head</button>
+            <button class="tablinks" onclick="opentab(event, 'Hair')">Hair</button>
+            <button class="tablinks" onclick="opentab(event, 'Eye')">Eye</button>
+            <button class="tablinks" onclick="opentab(event, 'Neck')">Neck</button>
+            <button class="tablinks" onclick="opentab(event, 'Body')">Body</button>
+            <button class="tablinks" onclick="opentab(event, 'Leg')">Leg</button>
+            <button class="tablinks" onclick="opentab(event, 'Feet')">Feet</button>
+            <button class="tablinks" onclick="opentab(event, 'Hand')">Hand</button>
+            <button class="tablinks" onclick="opentab(event, 'Pet')">Pet</button>
+            <button class="tablinks" onclick="opentab(event, 'Addon')">Addon</button>
+          </div>
+          
+          <div id="Head" class="tabcontent">
+            <h3>Head</h3>
+            <!-- <p>Show Head stuff</p> -->
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('head','')">
+                <img src="thumbnails/head_001_tophat.png" onclick="selected('head','head_001_tophat')">
+                <img src="thumbnails/head_002_roundhat_black.png" onclick="selected('head','head_002_roundhat_black')">
+                <img src="thumbnails/head_002_roundhat_blue.png" onclick="selected('head','head_002_roundhat_blue')">
+                <img src="thumbnails/head_002_roundhat_gold.png" onclick="selected('head','head_002_roundhat_gold')">
+                <img src="thumbnails/head_002_roundhat_green.png" onclick="selected('head','head_002_roundhat_green')">
+                <img src="thumbnails/head_002_roundhat_red.png" onclick="selected('head','head_002_roundhat_red')">
+                <img src="thumbnails/head_003_casualcap_black.png" onclick="selected('head','head_003_casualcap_black')">
+                <img src="thumbnails/head_003_casualcap_blue.png" onclick="selected('head','head_003_casualcap_blue')">
+                <img src="thumbnails/head_003_casualcap_green.png" onclick="selected('head','head_003_casualcap_green')">
+                <img src="thumbnails/head_003_casualcap_red.png" onclick="selected('head','head_003_casualcap_red')">
+                <img src="thumbnails/head_004_piratehat.png" onclick="selected('head','head_004_piratehat')">
+            </p>
+          </div>
+          
+          <div id="Hair" class="tabcontent">
+            <h3>Hair</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('hair','')">
+                <img src="thumbnails/hair_001_short.png" onclick="selected('hair','hair_001_short')">
+                <img src="thumbnails/hair_002_crewcut.png" onclick="selected('hair','hair_002_crewcut')">
+                <img src="thumbnails/hair_003_f4.png" onclick="selected('hair','hair_003_f4')">
+                <img src="thumbnails/hair_004_side.png" onclick="selected('hair','hair_004_side')">
+                <img src="thumbnails/hair_005_tall.png" onclick="selected('hair','hair_005_tall')">
+                <img src="thumbnails/hair_006_puffy.png" onclick="selected('hair','hair_006_puffy')">
+                <img src="thumbnails/hair_007_centre.png" onclick="selected('hair','hair_007_centre')">
+                <img src="thumbnails/hair_008_straight.png" onclick="selected('hair','hair_008_straight')">
+                <img src="thumbnails/hair_009_balding.png" onclick="selected('hair','hair_009_balding')">
+                <img src="thumbnails/hair_010_punk.png" onclick="selected('hair','hair_010_punk')">
+                <img src="thumbnails/hair_011_wrap.png" onclick="selected('hair','hair_011_wrap')">
+                <img src="thumbnails/hair_012_pony.png" onclick="selected('hair','hair_012_pony')">
+                <img src="thumbnails/hair_013_long.png" onclick="selected('hair','hair_013_long')">
+                <img src="thumbnails/hair_014_longstraight.png" onclick="selected('hair','hair_014_longstraight')">
+                <img src="thumbnails/hair_015_hairband.png" onclick="selected('hair','hair_015_hairband')">
+            </p> 
+          </div>
+          
+          <div id="Eye" class="tabcontent">
+            <h3>Eye</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('eye','')">
+                <img src="thumbnails/eye_001_specs_black.png" onclick="selected('eye','eye_001_specs_black')">                
+                <img src="thumbnails/eye_001_specs_blue.png" onclick="selected('eye','eye_001_specs_blue')">            
+                <img src="thumbnails/eye_001_specs_green.png" onclick="selected('eye','eye_001_specs_green')">                
+                <img src="thumbnails/eye_001_specs_red.png" onclick="selected('eye','eye_001_specs_red')">                                
+                <img src="thumbnails/eye_002_bigspecs_black.png" onclick="selected('eye','eye_002_bigspecs_black')">                            
+                <img src="thumbnails/eye_002_bigspecs_blue.png" onclick="selected('eye','eye_002_bigspecs_blue')">
+                <img src="thumbnails/eye_002_bigspecs_green.png" onclick="selected('eye','eye_002_bigspecs_green')">
+                <img src="thumbnails/eye_002_bigspecs_red.png" onclick="selected('eye','eye_002_bigspecs_red')">
+                <img src="thumbnails/eye_003_piratepatch_black_left.png" onclick="selected('eye','eye_003_piratepatch_black_left')">
+                <img src="thumbnails/eye_003_piratepatch_black_right.png" onclick="selected('eye','eye_003_piratepatch_black_right')">
+                <img src="thumbnails/eye_004_cyclops.png" onclick="selected('eye','eye_004_cyclops')">
+                <img src="thumbnails/eye_005_mask.png" onclick="selected('eye','eye_005_mask')">
+                <img src="thumbnails/eye_006_shades_black.png" onclick="selected('eye','eye_006_shades_black')">
+                <img src="thumbnails/eye_006_shades_blue.png" onclick="selected('eye','eye_006_shades_blue')">
+                <img src="thumbnails/eye_006_shades_green.png" onclick="selected('eye','eye_006_shades_green')">
+                <img src="thumbnails/eye_006_shades_red.png" onclick="selected('eye','eye_006_shades_red')">
+            </p>
+          </div>
+          
+          <div id="Neck" class="tabcontent">
+            <h3>Neck</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('neck','')">
+                <img src="thumbnails/neck_001_scarf_black.png" onclick="selected('neck','neck_001_scarf_black')">
+                <img src="thumbnails/neck_001_scarf_blue.png" onclick="selected('neck','neck_001_scarf_blue')">
+                <img src="thumbnails/neck_001_scarf_green.png" onclick="selected('neck','neck_001_scarf_green')">
+                <img src="thumbnails/neck_001_scarf_red.png" onclick="selected('neck','neck_001_scarf_red')">
+                <img src="thumbnails/neck_002_medal.png" onclick="selected('neck','neck_002_medal')">
+            </p>
+          </div>
+
+          <div id="Body" class="tabcontent">
+            <h3>Body</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('body','')">
+                <img src="thumbnails/body_001_tshirt_black.png" onclick="selected('body','body_001_tshirt_black')">
+                <img src="thumbnails/body_001_tshirt_blue.png" onclick="selected('body','body_001_tshirt_blue')">
+                <img src="thumbnails/body_001_tshirt_green.png" onclick="selected('body','body_001_tshirt_green')">
+                <img src="thumbnails/body_001_tshirt_red.png" onclick="selected('body','body_001_tshirt_red')">
+                <img src="thumbnails/body_002_singlet_blue.png" onclick="selected('body','body_002_singlet_blue')">
+                <img src="thumbnails/body_002_singlet_green.png" onclick="selected('body','body_002_singlet_green')">
+                <img src="thumbnails/body_002_singlet_grey.png" onclick="selected('body','body_002_singlet_grey')">
+                <img src="thumbnails/body_002_singlet_red.png" onclick="selected('body','body_002_singlet_red')">
+                <img src="thumbnails/body_003_suit_black.png" onclick="selected('body','body_003_suit_black')">
+                <img src="thumbnails/body_003_suit_blue.png" onclick="selected('body','body_003_suit_blue')">
+                <img src="thumbnails/body_003_suit_green.png" onclick="selected('body','body_003_suit_green')">
+                <img src="thumbnails/body_003_suit_red.png" onclick="selected('body','body_003_suit_red')">
+                <img src="thumbnails/body_004_dress_black.png" onclick="selected('body','body_004_dress_black')">
+                <img src="thumbnails/body_004_dress_blue.png" onclick="selected('body','body_004_dress_blue')">
+                <img src="thumbnails/body_004_dress_green.png" onclick="selected('body','body_004_dress_green')">
+                <img src="thumbnails/body_004_dress_red.png" onclick="selected('body','body_004_dress_red')">
+                <img src="thumbnails/body_005_jacket_black.png" onclick="selected('body','body_005_jacket_black')">
+                <img src="thumbnails/body_005_jacket_blue.png" onclick="selected('body','body_005_jacket_blue')">
+                <img src="thumbnails/body_005_jacket_green.png" onclick="selected('body','body_005_jacket_green')">
+                <img src="thumbnails/body_005_jacket_red.png" onclick="selected('body','body_005_jacket_red')">
+            </p>
+          </div>
+          
+          <div id="Leg" class="tabcontent">
+            <h3>Leg</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('leg','')">
+                <img src="thumbnails/leg_001_shorts_black.png" onclick="selected('leg','leg_001_shorts_black')">
+                <img src="thumbnails/leg_001_shorts_blue.png" onclick="selected('leg','leg_001_shorts_blue')">
+                <img src="thumbnails/leg_001_shorts_green.png" onclick="selected('leg','leg_001_shorts_green')">
+                <img src="thumbnails/leg_001_shorts_red.png" onclick="selected('leg','leg_001_shorts_red')">
+                <img src="thumbnails/leg_002_pants_black.png" onclick="selected('leg','leg_002_pants_black')">
+                <img src="thumbnails/leg_002_pants_blue.png" onclick="selected('leg','leg_002_pants_blue')">
+                <img src="thumbnails/leg_002_pants_green.png" onclick="selected('leg','leg_002_pants_green')">
+                <img src="thumbnails/leg_002_pants_red.png" onclick="selected('leg','leg_002_pants_red')">
+                <img src="thumbnails/leg_003_trackpants_black.png" onclick="selected('leg','leg_003_trackpants_black')">
+                <img src="thumbnails/leg_003_trackpants_blue.png" onclick="selected('leg','leg_003_trackpants_blue')">
+                <img src="thumbnails/leg_003_trackpants_green.png" onclick="selected('leg','leg_003_trackpants_green')">
+                <img src="thumbnails/leg_003_trackpants_red.png" onclick="selected('leg','leg_003_trackpants_red')">
+
+
+            </p>
+          </div>
+          
+          <div id="Feet" class="tabcontent">
+            <h3>Feet</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('feet','')">
+                <img src="thumbnails/feet_001_shoes_black.png" onclick="selected('feet','feet_001_shoes_black')">
+                <img src="thumbnails/feet_001_shoes_blue.png" onclick="selected('feet','feet_001_shoes_blue')">
+                <img src="thumbnails/feet_001_shoes_green.png" onclick="selected('feet','feet_001_shoes_green')">
+                <img src="thumbnails/feet_001_shoes_red.png" onclick="selected('feet','feet_001_shoes_red')">
+            </p>
+          </div>
+          
+          <div id="Hand" class="tabcontent">
+            <h3>Hand</h3>
+            <p>
+
+                <img src="thumbnails/cancel.png" onclick="selected('hand','')">
+                <img src="thumbnails/hand_001_woodensword.png" onclick="selected('hand','hand_001_woodensword')">
+                <img src="thumbnails/hand_002_sword.png" onclick="selected('hand','hand_002_sword')">
+                <img src="thumbnails/hand_003_stick.png" onclick="selected('hand','hand_003_stick')">
+                <img src="thumbnails/hand_004_club.png" onclick="selected('hand','hand_004_club')">
+                <img src="thumbnails/hand_005_barbedclub.png" onclick="selected('hand','hand_005_barbedclub')">
+                <img src="thumbnails/hand_006_spear.png" onclick="selected('hand','hand_006_spear')">
+                <img src="thumbnails/hand_007_axe.png" onclick="selected('hand','hand_007_axe')">
+                <img src="thumbnails/hand_008_whip.png" onclick="selected('hand','hand_008_whip')">
+                <img src="thumbnails/hand_009_dagger.png" onclick="selected('hand','hand_009_dagger')">
+                <img src="thumbnails/hand_010_rapier.png" onclick="selected('hand','hand_010_rapier')">
+                <img src="thumbnails/hand_011_briefcase.png" onclick="selected('hand','hand_011_briefcase')">
+                <img src="thumbnails/hand_012_walkingstick.png" onclick="selected('hand','hand_012_walkingstick')">
+                <img src="thumbnails/hand_013_flower.png" onclick="selected('hand','hand_013_flower')">
+                <img src="thumbnails/hand_014_kite.png" onclick="selected('hand','hand_014_kite')">
+            </p>
+          </div>
+          
+          <div id="Pet" class="tabcontent">
+            <h3>Pet</h3>
+                <img src="thumbnails/cancel.png" onclick="selected('pet','')">
+                <img src="thumbnails/pet_001_python.png" onclick="selected('pet','pet_001_python')">
+                <img src="thumbnails/pet_002_panda.png" onclick="selected('pet','pet_002_panda')">
+            
+          </div>
+          
+          <div id="Addon" class="tabcontent">
+            <h3>Addon</h3>
+            <p>
+                <img src="thumbnails/cancel.png" onclick="selected('addon','')">
+                <img src="thumbnails/addon_001_moustache.png" onclick="selected('addon','addon_001_moustache')">
+                <img src="thumbnails/addon_001_moustache_grey.png" onclick="selected('addon','addon_001_moustache_grey')">
+
+                <img src="thumbnails/addon_002_beard.png" onclick="selected('addon','addon_002_beard')">
+                <img src="thumbnails/addon_002_beard_grey.png" onclick="selected('addon','addon_002_beard_grey')">
+
+                <img src="thumbnails/addon_003_longbeard.png" onclick="selected('addon','addon_003_longbeard')">
+                <img src="thumbnails/addon_003_longbeard_grey.png" onclick="selected('addon','addon_003_longbeard_grey')">
+
+                <img src="thumbnails/addon_004_bushy.png" onclick="selected('addon','addon_004_bushy')">
+                <img src="thumbnails/addon_004_bushy_grey.png" onclick="selected('addon','addon_004_bushy_grey')">
+            </p>
+          </div>
+          
+        <script>
+        function opentab(evt, item) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(item).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        </script>
+        
+        <script type="text/javascript" src="constants.js"></script>
+        <script type="text/javascript" src="pixelavatar.js"></script>
+        
+    </div>
+</body>
+</html>
