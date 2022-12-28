@@ -156,6 +156,16 @@ const IMAGES_ASSETS = {
 	pet_001_python : "img/pet_001_python.png",
 	pet_002_panda : "img/pet_002_panda.png",
 	pet_003_reindeer : "img/pet_003_reindeer.png",
+	pet_004_egg : "img/pet_004_egg.png",
+	pet_004_egg_cracked : "img/pet_004_egg_cracked.png",
+	pet_004_egg_panda : "img/pet_004_egg_panda.png",
+	pet_004_egg_python : "img/pet_004_egg_python.png",
+	pet_005_dog : "img/pet_005_dog.png",
+	pet_005_dog_black : "img/pet_005_dog_black.png",
+	pet_006_cat : "img/pet_006_cat.png",
+	pet_006_cat_black : "img/pet_006_cat_black.png",
+	pet_007_hamster : "img/pet_007_hamster.png",
+	pet_007_hamster_black : "img/pet_007_hamster_black.png",
 	//----------
 
 	//addon
