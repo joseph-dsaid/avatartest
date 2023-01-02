@@ -34,6 +34,27 @@ const IMAGES_ASSETS = {
 	head_004_piratehat : "img/head_004_piratehat.png",
 	head_005_xmas : "img/head_005_xmas.png",
 	head_006_batman : "img/head_006_batman.png",
+	
+	head_007_cap_blue : "img/head_007_cap_blue.png",
+	head_007_cap_green : "img/head_007_cap_green.png",
+	head_007_cap_grey : "img/head_007_cap_grey.png",
+	head_007_cap_red : "img/head_007_cap_red.png",
+	head_008_police : "img/head_008_police.png",
+	head_009_viking : "img/head_009_viking.png",
+	head_010_halo : "img/head_010_halo.png",
+	head_011_centurion : "img/head_011_centurion.png",
+
+
+
+
+	
+
+
+
+
+
+
+
 	//----------
 
 	//hair
