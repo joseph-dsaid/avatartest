@@ -86,7 +86,9 @@ const IMAGES_ASSETS = {
 	neck_003_cape_black : "img/neck_003_cape_black.png",
 	neck_003_cape_red : "img/neck_003_cape_red.png",
 	neck_003_cape_blue : "img/neck_003_cape_blue.png",
-
+	neck_004_necklace : "img/neck_004_necklace.png",
+	neck_005_pendant_green : "img/neck_005_pendant_green.png",
+	neck_005_pendant_red : "img/neck_005_pendant_red.png",
 	//----------
 
 	//body
