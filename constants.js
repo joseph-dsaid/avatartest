@@ -33,6 +33,7 @@ const IMAGES_ASSETS = {
 	head_003_casualcap_red : "img/head_003_casualcap_red.png",
 	head_004_piratehat : "img/head_004_piratehat.png",
 	head_005_xmas : "img/head_005_xmas.png",
+	head_006_batman : "img/head_006_batman.png",
 	//----------
 
 	//hair
@@ -52,6 +53,7 @@ const IMAGES_ASSETS = {
 	hair_013_long : "img/hair_013_long.png",
 	hair_014_longstraight : "img/hair_014_longstraight.png",
 	hair_015_hairband : "img/hair_015_hairband.png",
+	hair_015_superman : "img/hair_015_superman.png",
 	//----------
 
 	//eye
@@ -79,6 +81,9 @@ const IMAGES_ASSETS = {
 	neck_001_scarf_green : "img/neck_001_scarf_green.png",
 	neck_001_scarf_red : "img/neck_001_scarf_red.png",
 	neck_002_medal : "img/neck_002_medal.png",
+	neck_003_cape_black : "img/neck_003_cape_black.png",
+	neck_003_cape_red : "img/neck_003_cape_red.png",
+	neck_003_cape_blue : "img/neck_003_cape_blue.png",
 
 	//----------
 
@@ -109,6 +114,8 @@ const IMAGES_ASSETS = {
 	body_005_jacket_red : "img/body_005_jacket_red.png",
 	
 	body_006_santa : "img/body_006_santa.png",
+	body_007_superman : "img/body_007_superman.png",
+	body_008_batman : "img/body_008_batman.png",
 	//----------
 	
 	//leg
@@ -125,6 +132,8 @@ const IMAGES_ASSETS = {
 	leg_003_trackpants_green : "img/leg_003_trackpants_green.png",
 	leg_003_trackpants_red : "img/leg_003_trackpants_red.png",
 	leg_004_santa : "img/leg_004_santa.png",
+	leg_005_superman : "img/leg_005_superman.png",
+	leg_006_batman : "img/leg_006_batman.png",
 
 	//----------
 
@@ -166,6 +175,7 @@ const IMAGES_ASSETS = {
 	pet_006_cat_black : "img/pet_006_cat_black.png",
 	pet_007_hamster : "img/pet_007_hamster.png",
 	pet_007_hamster_black : "img/pet_007_hamster_black.png",
+	pet_008_parrot : "img/pet_008_parrot.png",
 	//----------
 
 	//addon
