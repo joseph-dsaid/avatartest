@@ -54,6 +54,8 @@ const IMAGES_ASSETS = {
 	hair_014_longstraight : "img/hair_014_longstraight.png",
 	hair_015_hairband : "img/hair_015_hairband.png",
 	hair_015_superman : "img/hair_015_superman.png",
+	hair_016_shortcool : "img/hair_016_shortcool.png",
+	hair_017_curls : "img/hair_017_curls.png",
 	//----------
 
 	//eye
@@ -116,6 +118,7 @@ const IMAGES_ASSETS = {
 	body_006_santa : "img/body_006_santa.png",
 	body_007_superman : "img/body_007_superman.png",
 	body_008_batman : "img/body_008_batman.png",
+	body_009_labcoat : "img/body_009_labcoat.png",
 	//----------
 	
 	//leg
