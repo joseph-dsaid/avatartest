@@ -21,6 +21,10 @@ avatar['feet'] = "";
 avatar['hand'] = "";
 avatar['pet'] = "";
 avatar['addon'] = "";
+avatar['background'] = "background_001_solid_black";
+avatar['ear'] = "";
+avatar['mouth'] = "";
+avatar['face'] = "";
 
 //Add all onchange events
 document.getElementById("gender").onchange = gender_select;
@@ -85,7 +89,8 @@ function loadpixelavatar()
 {
 	clear_screen();
 	
-	ctx.drawImage(image_assets['base_m_001'], 0,0);
+	// ctx.drawImage(image_assets['base_m_001'], 0,0);
+    redraw_avatar();
 }
 
 function download_avatar()
@@ -120,9 +125,11 @@ function redraw_avatar()
 {
     clear_screen();
 
-    //draw hand
-    if (avatar['hand'] != "")
-        ctx.drawImage(image_assets[avatar['hand']], 0,0);
+    //draw background
+    if (avatar['background'] != "")
+        ctx.drawImage(image_assets[avatar['background']], 0,0);
+
+
     
     //draw base
     if (avatar['base'] != "")
@@ -132,11 +139,24 @@ function redraw_avatar()
     //draw eye
     if (avatar['eye'] != "")
         ctx.drawImage(image_assets[avatar['eye']], 0,0);
+    
+    //draw face
+    if (avatar['face'] != "")
+        ctx.drawImage(image_assets[avatar['face']], 0,0);
+    
+    //draw mouth
+    if (avatar['mouth'] != "")
+        ctx.drawImage(image_assets[avatar['mouth']], 0,0);
 
+        
     //draw hair
     if (avatar['hair'] != "")
-        ctx.drawImage(image_assets[avatar['hair'] ], 0,0);
-
+    ctx.drawImage(image_assets[avatar['hair'] ], 0,0);
+    
+    //draw ear
+    if (avatar['ear'] != "")
+        ctx.drawImage(image_assets[avatar['ear']], 0,0);
+        
     //draw head
     if (avatar['head'] != "")
         ctx.drawImage(image_assets[avatar['head'] ], 0,0);
@@ -154,6 +174,10 @@ function redraw_avatar()
     //draw neck
     if (avatar['neck'] != "")
         ctx.drawImage(image_assets[avatar['neck']], 0,0);
+
+    //draw hand
+    if (avatar['hand'] != "")
+        ctx.drawImage(image_assets[avatar['hand']], 0,0);
         
     //draw feet
     if (avatar['feet'] != "")
