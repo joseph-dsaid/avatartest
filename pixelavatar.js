@@ -135,7 +135,6 @@ function redraw_avatar()
     if (avatar['base'] != "")
         ctx.drawImage(image_assets[avatar['base']], 0,0);
 
-
     //draw eye
     if (avatar['eye'] != "")
         ctx.drawImage(image_assets[avatar['eye']], 0,0);
@@ -148,20 +147,9 @@ function redraw_avatar()
     if (avatar['mouth'] != "")
         ctx.drawImage(image_assets[avatar['mouth']], 0,0);
 
-        
-    //draw hair
-    if (avatar['hair'] != "")
-    ctx.drawImage(image_assets[avatar['hair'] ], 0,0);
-    
     //draw ear
     if (avatar['ear'] != "")
         ctx.drawImage(image_assets[avatar['ear']], 0,0);
-        
-    //draw head
-    if (avatar['head'] != "")
-        ctx.drawImage(image_assets[avatar['head'] ], 0,0);
-
-
 
     //draw leg
     if (avatar['leg'] != "")
@@ -175,13 +163,21 @@ function redraw_avatar()
     if (avatar['neck'] != "")
         ctx.drawImage(image_assets[avatar['neck']], 0,0);
 
-    //draw hand
-    if (avatar['hand'] != "")
-        ctx.drawImage(image_assets[avatar['hand']], 0,0);
-        
+    //draw hair
+    if (avatar['hair'] != "")
+        ctx.drawImage(image_assets[avatar['hair'] ], 0,0);
+    
+    //draw head
+    if (avatar['head'] != "")
+        ctx.drawImage(image_assets[avatar['head'] ], 0,0);
+    
     //draw feet
     if (avatar['feet'] != "")
         ctx.drawImage(image_assets[avatar['feet'] ], 0,0);
+    
+        //draw hand
+    if (avatar['hand'] != "")
+        ctx.drawImage(image_assets[avatar['hand']], 0,0);
 
     //draw pet
     if (avatar['pet'] != "")
