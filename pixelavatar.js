@@ -175,7 +175,7 @@ function redraw_avatar()
     if (avatar['feet'] != "")
         ctx.drawImage(image_assets[avatar['feet'] ], 0,0);
     
-        //draw hand
+    //draw hand
     if (avatar['hand'] != "")
         ctx.drawImage(image_assets[avatar['hand']], 0,0);
 
