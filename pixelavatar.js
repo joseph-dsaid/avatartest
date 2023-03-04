@@ -135,13 +135,13 @@ function redraw_avatar()
     if (avatar['base'] != "")
         ctx.drawImage(image_assets[avatar['base']], 0,0);
 
-    //draw eye
-    if (avatar['eye'] != "")
-        ctx.drawImage(image_assets[avatar['eye']], 0,0);
-    
     //draw face
     if (avatar['face'] != "")
         ctx.drawImage(image_assets[avatar['face']], 0,0);
+
+    //draw eye
+    if (avatar['eye'] != "")
+        ctx.drawImage(image_assets[avatar['eye']], 0,0);
     
     //draw mouth
     if (avatar['mouth'] != "")
