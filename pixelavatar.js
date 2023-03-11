@@ -122,23 +122,56 @@ function selected(part,item)
     redraw_avatar();
 }
 
-// function randomize()
-// {
-//     avatar['head'] = image_assets_head[Math.floor(Math.random() * image_assets_head.length)];
-//     avatar['hair'] = "";
-//     avatar['eye'] = "";
-//     avatar['neck'] = "";
-//     avatar['body'] = "";
-//     avatar['leg'] = "";
-//     avatar['feet'] = "";
-//     avatar['hand'] = "";
-//     avatar['pet'] = "";
-//     avatar['addon'] = "";
-//     avatar['back'] = "";
-//     avatar['ear'] = "";
-//     avatar['mouth'] = "";
-//     avatar['face'] = "";
-// }
+function randomize()
+{
+    var ran_asset = ASSETS_HEAD[Math.floor(Math.random() * ASSETS_HEAD.length)];
+    avatar['head'] = ran_asset;
+
+    ran_asset = ASSETS_HAIR[Math.floor(Math.random() * ASSETS_HAIR.length)];
+    avatar['hair'] = ran_asset;
+
+    ran_asset = ASSETS_EYE[Math.floor(Math.random() * ASSETS_EYE.length)];
+    avatar['eye'] = ran_asset;
+
+    ran_asset = ASSETS_NECK[Math.floor(Math.random() * ASSETS_NECK.length)];
+    avatar['neck'] = ran_asset;
+
+    ran_asset = ASSETS_BODY[Math.floor(Math.random() * ASSETS_BODY.length)];
+    avatar['body'] = ran_asset;
+
+    ran_asset = ASSETS_LEG[Math.floor(Math.random() * ASSETS_LEG.length)];
+    avatar['leg'] = ran_asset;
+
+    ran_asset = ASSETS_FEET[Math.floor(Math.random() * ASSETS_FEET.length)];
+    avatar['feet'] = ran_asset;
+
+    ran_asset = ASSETS_HAND[Math.floor(Math.random() * ASSETS_HAND.length)];
+    avatar['hand'] = ran_asset;
+
+    ran_asset = ASSETS_PET[Math.floor(Math.random() * ASSETS_PET.length)];
+    avatar['pet'] = ran_asset;
+
+    ran_asset = ASSETS_ADDON[Math.floor(Math.random() * ASSETS_ADDON.length)];
+    avatar['addon'] = ran_asset;
+    
+    ran_asset = ASSETS_BACK[Math.floor(Math.random() * ASSETS_BACK.length)];
+    avatar['back'] = ran_asset;
+    
+    ran_asset = ASSETS_EAR[Math.floor(Math.random() * ASSETS_EAR.length)];
+    avatar['ear'] = ran_asset;
+
+    ran_asset = ASSETS_MOUTH[Math.floor(Math.random() * ASSETS_MOUTH.length)];
+    avatar['mouth'] = ran_asset;
+
+    if (!avatar['base'].startsWith('base_f'))
+    {
+        console.log(avatar['base'])
+        ran_asset = ASSETS_FACE[Math.floor(Math.random() * ASSETS_FACE.length)];
+        avatar['face'] = ran_asset;
+    }
+
+    redraw_avatar();
+}
 
 function redraw_avatar()
 {

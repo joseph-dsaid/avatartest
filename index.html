@@ -83,10 +83,6 @@
       visibility: visible;
     }
 
-	#wrapper {
-		
-	}
-
 	#gameDiv {
 		display: inline-block;
 	}
@@ -99,6 +95,12 @@
 	#div_gender {
 		vertical-align:middle;
 		display: inline-block;
+	}
+
+	#randomize {
+		vertical-align:middle;
+		display: inline-block;
+
 	}
 
 </style>
@@ -126,6 +128,9 @@
 					<option value="base_f_003">Female 3</option>
 					<option value="base_f_004">Female 4</option>
 				</select>
+			</div>
+			<div id="randomize" align="center">
+				<input type="button" value="Randomize" onclick="randomize()">
 			</div>
 		</div>
         <br/>
