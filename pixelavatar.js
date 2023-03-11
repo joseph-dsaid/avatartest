@@ -122,6 +122,24 @@ function selected(part,item)
     redraw_avatar();
 }
 
+// function randomize()
+// {
+//     avatar['head'] = image_assets_head[Math.floor(Math.random() * image_assets_head.length)];
+//     avatar['hair'] = "";
+//     avatar['eye'] = "";
+//     avatar['neck'] = "";
+//     avatar['body'] = "";
+//     avatar['leg'] = "";
+//     avatar['feet'] = "";
+//     avatar['hand'] = "";
+//     avatar['pet'] = "";
+//     avatar['addon'] = "";
+//     avatar['back'] = "";
+//     avatar['ear'] = "";
+//     avatar['mouth'] = "";
+//     avatar['face'] = "";
+// }
+
 function redraw_avatar()
 {
     clear_screen();
