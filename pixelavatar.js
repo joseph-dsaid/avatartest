@@ -39,7 +39,7 @@ function preloading_done()
 		preload_ready = preload_ready && image_assets[key].ready;
 		// console.log(key,value);
 	}
-    console.log(image_assets);
+    // console.log(image_assets);
 	return preload_ready;
 }
 
