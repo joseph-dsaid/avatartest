@@ -181,6 +181,10 @@ function redraw_avatar()
     if (avatar['background'] != "")
         ctx.drawImage(image_assets[avatar['background']], 0,0);
 
+    //draw pet
+    if (avatar['pet'] != "")
+        ctx.drawImage(image_assets[avatar['pet']], 0,0);
+
     //draw back
     if (avatar['back'] != "")
         ctx.drawImage(image_assets[avatar['back']], 0,0);
@@ -232,10 +236,6 @@ function redraw_avatar()
     //draw hand
     if (avatar['hand'] != "")
         ctx.drawImage(image_assets[avatar['hand']], 0,0);
-
-    //draw pet
-    if (avatar['pet'] != "")
-        ctx.drawImage(image_assets[avatar['pet']], 0,0);
 
     //draw addon
     if (avatar['addon'] != "")
