@@ -1125,6 +1125,12 @@ const IMAGES_ASSETS = {
 	pet_064_bullseye : "img/pet_064_bullseye.png",
 	pet_065_unicornwinged : "img/pet_065_unicornwinged.png",
 	pet_066_sheepwithfood : "img/pet_066_sheepwithfood.png",
+	pet_067_datamascot : "img/pet_067_datamascot.png",
+	pet_068_eprimerguy : "img/pet_068_eprimerguy.png",
+	pet_069_eprimerboss : "img/pet_069_eprimerboss.png",
+	pet_070_eprimerbusinessanalyst : "img/pet_070_eprimerbusinessanalyst.png",
+	pet_071_eprimerprojectlead : "img/pet_071_eprimerprojectlead.png",
+	pet_072_eprimerdatascientist : "img/pet_072_eprimerdatascientist.png",
 
 }
 
@@ -2363,4 +2369,10 @@ const ASSETS_PET = [
 	'pet_064_bullseye',
 	'pet_065_unicornwinged',
 	'pet_066_sheepwithfood',
+	'pet_067_datamascot',
+	'pet_068_eprimerguy',
+	'pet_069_eprimerboss',
+	'pet_070_eprimerbusinessanalyst',
+	'pet_071_eprimerprojectlead',
+	'pet_072_eprimerdatascientist',
 ]
