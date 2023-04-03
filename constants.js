@@ -148,6 +148,8 @@ const IMAGES_ASSETS = {
 	background_014_outerspace : "img/background_014_outerspace.png",
 	background_015_homegym : "img/background_015_homegym.png",
 	background_016_japan : "img/background_016_japan.png",
+	background_017_bigmoon : "img/background_017_bigmoon.png",
+	background_018_dungeon : "img/background_018_dungeon.png",
 	base_bear : "img/base_bear.png",
 	base_f_001 : "img/base_f_001.png",
 	base_f_002 : "img/base_f_002.png",
@@ -1222,6 +1224,7 @@ const IMAGES_ASSETS = {
 	pet_091_specialtoycar_blue : "img/pet_091_specialtoycar_blue.png",
 	pet_091_specialtoycar_green : "img/pet_091_specialtoycar_green.png",
 	pet_091_specialtoycar_red : "img/pet_091_specialtoycar_red.png",
+	pet_092_typicalalien : "img/pet_092_typicalalien.png",
 
 }
 
@@ -1395,6 +1398,8 @@ const ASSETS_BACKGROUND = [
 	'background_014_outerspace',
 	'background_015_homegym',
 	'background_016_japan',
+	'background_017_bigmoon',
+	'background_018_dungeon',
 ]
 
 const ASSETS_BODY = [
@@ -2556,4 +2561,5 @@ const ASSETS_PET = [
 	'pet_091_specialtoycar_blue',
 	'pet_091_specialtoycar_green',
 	'pet_091_specialtoycar_red',
+	'pet_092_typicalalien',
 ]
